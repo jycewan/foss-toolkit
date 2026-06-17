@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recompile — A FOSS Activist Toolkit</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- QR code library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <!-- html2canvas for brochure download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="mainnav">
+    <div class="nav-logo">Re<span>compile</span></div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#" data-page="about" class="nav-link active">01 / About</a></li>
+      <li><a href="#" data-page="toolkit" class="nav-link">02 / Toolkit</a></li>
+      <li><a href="#" data-page="resources" class="nav-link">03 / Resources</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== PAGE 1: ABOUT ===================== -->
+  <section class="page active" id="about">
+    <div class="hero">
+      <div class="eyebrow">// case study: the free and open-source software (foss) movement</div>
+      <h1>Software was never<br><span class="accent">free</span> by accident.</h1>
+      <p>
+        In 1983, Richard Stallman launched the GNU Project on a simple premise: software
+        users deserve the freedom to run, study, share, and modify the code that runs
+        their lives. By 1998, that moral language had been rebranded as "open source" —
+        a strategic softening designed to make the movement palatable to corporations.
+        The rebrand worked. 
+      </p>
+      <p>
+        But today, that same gap is being exploited again. AI companies train models on
+        open-source code at scale, extracting value while limiting contributions back
+        to the commons. 
+      </p>
+      <div class="hero-rule"></div>
+      <p>
+        <strong>Recompile</strong> is an activist toolkit for a Free and Open-Source Software (FOSS) 
+        revival movement: a set of ten practical tools, theoretical anchors, and a living manifesto 
+        for renewing free software's original ideals in the age of AI and cloud enclosure.
+      </p>
+    </div>
+<!--
+    <div class="about-grid">
+      <div class="about-block">
+        <h3>The Problem</h3>
+        <p>Vocabulary erosion is a form of defeat. "Free software" carried a moral claim about users' rights; "open source" carried only a development methodology. Losing the former language left the movement structurally unprepared for the next enclosure.</p>
+      </div>
+      <div class="about-block">
+        <h3>The Frame</h3>
+        <p>This toolkit draws on Tufekci's framework of narrative, disruptive, and institutional capacities, and Foran's globalization-from-below model, to identify where a FOSS revival movement can build power — and where its leaderless structure remains a vulnerability.</p>
+      </div>
+      <div class="about-block">
+        <h3>The Spine</h3>
+        <p><strong>Reciprocity</strong> is the value that bridges Stallman's moral-freedom camp and the utilitarian open-source camp. Every tool in this toolkit operationalizes give-and-take — the principle the GPL encoded and that AI training pipelines currently bypass.</p>
+      </div>
+      <div class="about-block">
+        <h3>This Toolkit</h3>
+        <p>Ten tools across foundations, infrastructure, visibility, and community engagement. The manifesto anchors everything. Explore them on the Toolkit page, or download the brochure on Resources.</p>
+      </div>
+    </div>
+  -->
+  </section>
+
+  <!-- ===================== PAGE 2: TOOLKIT ===================== -->
+  <section class="page" id="toolkit">
+    <div class="toolkit-header">
+      <h2>The Toolkit</h2>
+      <p>Ten tools for a FOSS revival movement. Click any tool to expand, or use the buttons to open all at once.</p>
+      <div class="toolkit-controls">
+        <button class="ctrl-btn" id="expandAll">Expand All</button>
+        <button class="ctrl-btn" id="collapseAll">Collapse All</button>
+      </div>
+    </div>
+
+    <div class="toolgrid">
+
+      <!-- ====== TOOL 1: Manifesto ====== -->
+      <div class="tool" id="toolone">
+        <!--<button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-section-label">FOUNDATIONS</span>
+            <span class="tool-num">1.</span>
+            <span class="tool-name">Toward a Manifesto</span>
+          </div>
+          <span class="chevron" aria-hidden="true">+</span>
+        </button> -->
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">1.</span>
+            <span class="tool-name">Toward a Manifesto</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">foundations</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+        
+        <div class="tool-body" hidden>
+          <div class="tool-body-innertool-body-single"><!--to help w/ grid-->
+          <!--
+            <div class="tool-img-wrap">
+              <img src="images/tool1pic.jpg" alt="Manifesto visual" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool1pic.jpg</div>
+            </div>
+          -->
+            <div class="tool-text">
+              <p>Software was meant to be shared, and shared back. That promise built the commons we all stand on now.</p>
+              <p>But the ground has shifted. Capital learned to extract from the commons without reciprocation– not by stealing code outright, but by running it, training on it, profiting from it while the old rules of distribution stayed silent. Both "free" and "open" assumed a world where sharing and reciprocity moved together, but the structures of the world have changed.</p>
+              <p>We hold one principle non-negotiable: reciprocity. Not nostalgia for old licenses, not purity over pragmatism, but the insistence that whoever takes from the commons gives back, at every layer: code, execution, and training.</p>
+              <p>We do not pretend to have solved this. We are not idealists; we are strategists committed to an ideal.</p>
+              <p>This document is unfinished by design. Ideate and amend.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 2: Theoretical Anchor ====== -->
+      <div class="tool" id="tooltwo">
+        
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">2.</span>
+            <span class="tool-name">A Theoretical Anchor - Recompile Workshops</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">foundations</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool2pic.png" alt="Twitter and Tear Gas" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool2pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> Technology is not a neutral tool; Tufekci’s Twitter and Tear Gas describes technology as both a tool for movements and a landscape that can use revolutionaries as well. This is especially relevant to FOSS, where technological advancement and networks can encourage speed and visibility, but revolutionaries risk forgetting that tools (including this toolkit’s) are only useful as long as they serve a shared human vision. Planned obsolescence, whether explicit in software expiration while hardware remains usable or in the design of modern items that break easily, replicates the concept of technology as a tool for or against the public depending on who controls its structure. Rejecting planned obsolescence reflects a refusal to be used by a tool, offering an offline parallel that is nevertheless spurred on and made possible by networks.</p>
+              <p><strong>Mechanism:</strong> A recurring, open in-person gathering workshop that invites the general public to bring in their broken or planned obsolescent objects. People bring broken items like bikes, clothes that need mending, devices that are becoming obsolete, etc., depending on the volunteers’ capabilities in that gathering, and the volunteers help event-goers learn to repair their objects.</p>
+              <div class="tool-cite"><a href="https://www.twitterandteargas.org/" target="_blank" rel="noopener">twitterandteargas.org</a> · <a href="https://therestartproject.org/campaigns/international-repair-day/" target="_blank" rel="noopener">International Repair Day handbook - therestartproject.org</a></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 3: Historical Anchor ====== -->
+      <div class="tool" id="toolthree">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">3.</span>
+            <span class="tool-name">A Historical Anchor - Digital Archive</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">foundations</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool3pic.png" alt="Commoners fight back" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool3pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> The enclosure of England's commons offers the deepest precedent for what is happening to the digital commons now. For centuries, open fields and common pastures sustained smallholders through shared management: negotiated, rule-bound cooperation like manor courts, stints, and communal rotations. Enclosure occurred because powerful actors found it profitable to fence what had been shared, often using "improvement" as cover, much like today's extraction profits large corporations. Giving activists a historical lineage counters the sense that digital enclosure is a novel, unprecedented, or inevitable process; it shows it has been fought before, that there has been a history of the same human vision, with documented strategies and outcomes, even if those are not equally applicable today. </p>
+              <p><strong>Mechanism:</strong> A freely distributed digital site hosting readings on historical enclosure alongside relevant movements and theorists, offering inspiration and context. The site functions as a defensive place where the public can read about who writes history, who deems enclosure "inevitable," and what has been done about it. It serves to open history, and in doing so, perhaps inspire others.</p>
+              <div class="tool-cite"><a href="https://www.thelandmagazine.org.uk/articles/short-history-enclosure-britain" target="_blank" rel="noopener">A Short History of Enclosure - thelandmagazine.org.uk</a> · <a href="https://www.gutenberg.org/" target="_blank" rel="noopener">gutenberg.org</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 4: Living Library ====== -->
+      <div class="tool" id="toolfour">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">4.</span>
+            <span class="tool-name">Living Library</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">infrastructure</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool4pic.png" alt="Codeberg" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool4pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> FOSS projects already depend heavily on a small number of corporate-owned platforms, GitHub being the obvious one, for hosting, discovery, and even identity within the community. This dependency became visible during the GitHub Copilot controversy, when many developers realized their code had been used for training without their consent, on the same platform they relied on to host that code. This tool exists because a movement built around the idea of software freedom shouldn't have its own critical infrastructure, glossary, archives, ongoing projects, sitting entirely on platforms it's simultaneously trying to hold accountable.</p>
+              <p><strong>Mechanism:</strong> A single federated platform, something like Codeberg, Forgejo, or IPFS, hosting copies of critical FOSS repositories, historical and ideological sources, ongoing news covering licensing changes and lawsuits, and the open-source projects the movement itself produces. Individuals and groups handle their own repositories, and rotating contributors can keep individual repositories on news feed current, so no single person's absence breaks the whole thing. </p>
+              <div class="tool-cite"><a href="https://moginlawllp.com/developers-sue-github-microsoft-and-openai-over-copyright-in-creating-ai-tool-copilot/" target="_blank" rel="noopener">Developers sue GitHub, Microsoft, and OpenAI - moginlawllp.com</a> · <a href="https://codeberg.org/" target="_blank" rel="noopener">codeberg.org</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 5: Podcast ====== -->
+      <div class="tool" id="toolfive">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">5.</span>
+            <span class="tool-name">Podcast</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">visibility</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool5pic.png" alt="Podcast" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool5pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> Most people who benefit from FOSS every day, through Android, through web infrastructure built on the LAMP stack, may not know it was connected to a movement with a history and an ongoing, even if fractured, argument. The shift from "free software" to "open source" was partly successful because it framed its goals as a development methodology rather than something with ethical stakes, and today’s cyclical concerns with big tech and AI have a past. A podcast and social media content aimed at a general audience, not just developers, is a way of reintroducing the idea that there's something vital to care about here that affects most people today. </p>
+              <p><strong>Mechanism:</strong> Run a weekly podcast with short-form clips posted simultaneously to Spotify, YouTube, and Instagram, with a guest lineup that includes a variety of individuals or groups: open-source maintainers, legal scholars discussing cases, recurring debates between various advocates of aspects of the movement, and others that can provide anything from contemporary to scholarly insight. This podcast can also host guests from other modern movements that are aligned in similar ways. Even though these aren't open platforms themselves, the speed and reach they offer is necessary for more widespread understanding and the encouragement of discourse. </p>
+              <div class="tool-cite"><a href="https://open.spotify.com/show/6mJs1bb3QVkgKYnHLt0YV1" target="_blank" rel="noopener">The Art of Open Source - open.spotify.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 6: Open Design Calls ====== -->
+      <div class="tool" id="toolsix">
+
+      <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">6.</span>
+            <span class="tool-name">Open Design Calls</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">visibility</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool6pic.png" alt="Tux the Linux penguin" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool6pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> FOSS has no shared face. Tux the penguin works for Linux, but the broader movement it has devolved into or rather, all the varying groups adjacent to it doesn't have an equivalent symbol or image that travels across projects, platforms, and public spaces the way a flag or logo does for other movements. This matters because decentralized movements without shared visual identity struggle to register as movements in public consciousness; they read as a collection of unrelated projects with overlapping complaints rather than a unified force with a common demand.</p>
+              <p><strong>Mechanism:</strong> Rather than engineering a mascot, this tool builds the infrastructure for one to emerge organically. Each hackathon, reading group cohort, and policy campaign runs its own open design call for whatever artifact it needs, be it a zine cover, a campaign sticker, a patch, or more. All submissions live on the Living Library, version-controlled and freely forkable. If one image keeps getting reused and remixed without anyone deciding it should, perhaps that symbol has earned its place. Rather than forcing a shared visual identity, this tool creates the conditions under which identity can accumulate.</p>
+              <div class="tool-cite"><a href="https://cyberpanel.net/blog/linux-penguin" target="_blank" rel="noopener">Linux Penguin - cyberpanel.net</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 7: "Going Dark" Installation ====== -->
+      <div class="tool" id="toolseven">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">7.</span>
+            <span class="tool-name">"Goind Dark" Installation</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">visibility</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool7pic.png" alt="Wikipedia Blackout" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool7pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> FOSS components are everywhere in the software people use daily, but they’re almost entirely invisible until something breaks, which is part of why arguments about licensing or AI training data may feel abstract as they don’t necessarily impact day-to-day life. When a widely-used open-source library gets pulled or relicensed or if the software upon which technology is built goes down, the disruption is felt immediately by people who may not have cared about the dependency before. “Going Dark” uses that same dynamic deliberately, making the invisible dependency on FOSS visible through absence, which is a much more direct method of showing the public why they should care.</p>
+              <p><strong>Mechanism:</strong> A public installation, posters, a billboard, or a takeover of a screen in a high-traffic space like a campus or public square, simulates familiar local tools failing one at a time, each with a short note explaining which open-source component broke and why. Provide a toolkit version or inspiration for this, templates, sample copy, and a list of commonly relied-upon open-source components, so chapters or allied groups elsewhere can adapt it to their own local services and run their own version on their own timeline.</p>
+              <div class="tool-cite"><a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Wikipedia_Blackout_Screen.jpg" target="_blank" rel="noopener">Wikipedia Blackout Screen - wikimedia.org</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 8: Reading Groups ====== -->
+      <div class="tool" id="tooleight">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">8.</span>
+            <span class="tool-name">Reading Groups</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">community</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool8pic.png" alt="Reading group guides" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool8pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> The shift from "free software" to "open source" is a textbook case of vocabulary erosion, where terms like "freedom" and "user rights" were absorbed in favor of language about efficiency and development practices, and most people who use the term "open source" may not have read the GPL or Stallman's original arguments for why the distinction mattered. Reading groups counter this by going back to primary sources directly, rather than letting the movement's vocabulary keep drifting through secondhand summaries, forcing individuals to wrestle with the terminology rather than outsourcing their thinking. </p>
+              <p><strong>Mechanism:</strong> Bimonthly sessions organized digitally, meeting online or in-person, work through primary texts, original essays, legal filings, popular arguments, materials from various movements, or more. Sessions can be publicized online, even through proprietary software like Discord, or through word of mouth, existing all across the world and through different institutions to encourage discourse and the sharing of ideas to build individual consciousness. The regularity also builds the kind of relationships that allow for mentorship and community building since someone you've read alongside for months can more naturally become a mentor or mentee. </p>
+              <div class="tool-cite"><a href="https://www.readinggroupguides.com/" target="_blank" rel="noopener">readinggroupguides.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 9: Advocacy Web ====== -->
+      <div class="tool" id="toolnine">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">9.</span>
+            <span class="tool-name">Advocacy Web</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">community</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool9pic.png" alt="Global groups map" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool9pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> Student organizations, regional meetups, foundations like EFF, OSI, FSF may operate without knowing what specifically others are doing and aiming for. However, leverage against enclosure depends on coordinated pressure across institutions, not parallel solo efforts. Meanwhile, licensing may be more specific to each institution or region, requiring policy chapters working towards specific institutions from the inside. Both a broad connective layer constantly reaching out to other groups and the support that such a web provides for each unique chapter are beneficial.</p>
+              <p><strong>Mechanism:</strong> Advocacy Web is a connective layer that bridges various organizations, chapters, and groups that individually pursue whatever policies they can realistically reach, be it procurement preferences, AI-disclosure requirements, or more, using a shared template that can be adapted locally. A rotating group of representatives, drawn from each chapter and from allied movements working in parallel, meets periodically to share progress, discuss redundant efforts, and coordinate inter-chapter events. No single chapter permanently holds the coordinating role. Small everyday successes and wins can get logged to a shared directory, so others can be inspired by and adapt what worked. Adjacent organizations outside FOSS, such as in labor, privacy, and environmental commons movements, can also deliver insight because the enclosure problem is not singular.</p>
+              <div class="tool-cite"><a href="https://rebellion.global/groups/#countries" target="_blank" rel="noopener">rebellion.global</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== TOOL 10: Project-Based Hackathons ====== -->
+      <div class="tool" id="toolten">
+
+        <button class="tool-head" aria-expanded="false">
+          <div class="tool-title-row">
+            <span class="tool-num">10.</span>
+            <span class="tool-name">Projet-Based Hackathons</span>
+          </div>
+          <div class="tool-head-right">
+            <span class="tool-section-label">community</span>
+            <span class="chevron" aria-hidden="true">+</span>
+          </div>
+        </button>
+
+        <div class="tool-body" hidden>
+          <div class="tool-body-inner">
+            <div class="tool-img-wrap">
+              <img src="images/tool10pic.png" alt="Devpost hackathons" class="tool-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="tool-img-placeholder">tool10pic.png</div>
+            </div>
+            <div class="tool-text">
+              <p><strong>Relevance:</strong> While it is a tricky balance to find, the creative ideation which risks being outsourced tolely to tools and the learning of skills in order to keep up and even subvert technology are both equally important in the current climate. The work that brought FOSS to life– the documentation, the adaptation, the community learning– unites developers and beginners worldwide and can be adapted to today’s climate. While single-day hackathons help in ideation, they also do not necessarily facilitate the deep thought process required in longer projects. </p>
+              <p><strong>Mechanism:</strong> Project boards, which can be tied to a specific FOSS tool that activist or mutual-aid networks rely on, encrypted messaging, organizing software, or more typical hackathon projects, are tagged by time estimate and skill level. Periodically, the community also runs an in-person hackathon day/ week aimed especially at younger contributors, as the next generation of youth is a vital place to look for the future thinkers. </p>
+              <div class="tool-cite"><a href="https://devpost.com/" target="_blank" rel="noopener">devpost.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /toolgrid -->
+  </section>
+
+  <!-- ===================== PAGE 3: RESOURCES ===================== -->
+  <section class="page" id="resources">
+    <div class="resources-wrap">
+      <h2>Resources</h2>
+      <p class="resources-intro">A growing reference bank.</p>
+
+      <div class="res-cols">
+        <div class="res-col">
+          <div class="res-category" id="rescatone">
+            <h3>Foundations &amp; Organizations</h3>
+            <a class="res-link" href="https://www.fsf.org/about/" target="_blank" rel="noopener">
+              <span class="res-name">Free Software Foundation</span>
+              <span class="res-url">fsf.org/about</span>
+            </a>
+            <a class="res-link" href="https://www.gnu.org/gnu/gnu.html#content" target="_blank" rel="noopener">
+              <span class="res-name"> GNU Project</span>
+              <span class="res-url">gnu.org/gnu</span>
+            </a>
+            <a class="res-link" href="https://opensource.org/" target="_blank" rel="noopener">
+              <span class="res-name">Open Source Initiative</span>
+              <span class="res-url">opensource.org</span>
+            </a>
+            <a class="res-link" href="https://www.eff.org/" target="_blank" rel="noopener">
+              <span class="res-name">Electronic Frontier Foundation</span>
+              <span class="res-url">eff.org</span>
+            </a>
+            <a class="res-link" href="https://sfconservancy.org/" target="_blank" rel="noopener">
+              <span class="res-name">Software Freedom Conservancy</span>
+              <span class="res-url">sfconservancy.org</span>
+            </a>
+          </div>
+
+          <div class="res-category" id="rescattwo">
+            <h3>Current</h3>
+            <a class="res-link" href="https://moginlawllp.com/developers-sue-github-microsoft-and-openai-over-copyright-in-creating-ai-tool-copilot/" target="_blank" rel="noopener">
+              <span class="res-name">Doe vs. GitHub</span>
+              <span class="res-url">moginlawllp.com</span>
+            </a>
+            <a class="res-link" href="https://claw-code.codes/" target="_blank" rel="noopener">
+              <span class="res-name">Claw Code</span>
+              <span class="res-url">claw-code.codes/</span>
+            </a> 
+      <!--
+            <a class="res-link" href="#" target="_blank" rel="noopener">
+              <span class="res-name">Vizio Lawsuit — trial August 2026</span>
+              <span class="res-url">add link</span>
+            </a>
+            <a class="res-link" href="#" target="_blank" rel="noopener">
+              <span class="res-name">September 2025 Open Source Foundations — Open Letter</span>
+              <span class="res-url">add link</span>
+            </a>
+            <a class="res-link" href="#" target="_blank" rel="noopener">
+              <span class="res-name">Post-Stallman FSF Transition</span>
+              <span class="res-url">add link</span>
+            </a>
+          -->
+          </div>
+        </div>
+
+        <div class="res-col">
+          <div class="res-category" id="rescatthree">
+            <h3>Licensing &amp; Ethics</h3>
+            <a class="res-link" href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener">
+              <span class="res-name">GNU General Public License (GPL v3)</span>
+              <span class="res-url">gnu.org/licenses/gpl-3.0</span>
+            </a>
+            <a class="res-link" href="https://ethicalsource.dev/" target="_blank" rel="noopener">
+              <span class="res-name">Ethical Source Movement</span>
+              <span class="res-url">ethicalsource.dev</span>
+            </a>
+            <a class="res-link" href="https://firstdonoharm.dev/" target="_blank" rel="noopener">
+              <span class="res-name">Hippocratic License</span>
+              <span class="res-url">firstdonoharm.dev</span>
+            </a>
+            <a class="res-link" href="https://www.mongodb.com/licensing/server-side-public-license" target="_blank" rel="noopener">
+              <span class="res-name">Server Side Public License (SSPL)</span>
+              <span class="res-url">mongodb.com/licensing/sspl</span>
+            </a>
+          </div>
+
+          <div class="res-category" id="rescatfour">
+            <h3>Context</h3>
+            <a class="res-link" href="https://www.thelandmagazine.org.uk/articles/short-history-enclosure-britain" target="_blank" rel="noopener">
+              <span class="res-name">A Short History of Enclosure in Britain</span>
+              <span class="res-url">thelandmagazine.org.uk</span>
+            </a>
+            <a class="res-link" href="https://www.twitterandteargas.org/" target="_blank" rel="noopener">
+              <span class="res-name">Twitter and Tear Gas</span>
+              <span class="res-url">twitterandteargas.org</span>
+            </a>
+            <a class="res-link" href="https://direct.mit.edu/books/monograph/3528/For-Fun-and-ProfitA-History-of-the-Free-and-Open" target="_blank" rel="noopener">
+              <span class="res-name">For Fun and Profit: A History of the Free and Open Source Software Revolution</span>
+              <span class="res-url">direct.mit.edu</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== BROCHURE ====== -->
+      <div class="brochure-section">
+        <h3>Downloadable Brochure</h3>
+        <p>A printable card summarising all ten tools. Download and distribute.</p>
+        <div class="brochure-card" id="brochurecard">
+          <div class="brochure-left">
+            <div class="brochure-title">Re<span>compile</span></div>
+            <div class="brochure-tagline">The commons doesn't maintain itself.</div>
+            <ol class="brochure-tools">
+              <li>Toward a Manifesto</li>
+              <li>A Theoretical Anchor - Recompile Workshops</li>
+              <li>A Historical Anchor -  Digital Archive</li>
+              <li>Living Library</li>
+              <li>Podcast</li>
+              <li>Open Design Calls</li>
+              <li>"Going Dark" Installation</li>
+              <li>Reading Groups</li>
+              <li>Advocacy Web</li>
+              <li>Project-Based Hackathons</li>
+            </ol>
+            <div class="brochure-url">free and open-source software toolkit / foss-toolkit</div>
+          </div>
+          <div class="brochure-right">
+            <div class="brochure-qr-label">Scan to open the toolkit</div>
+            <div id="qrcode"></div>
+          </div>
+        </div>
+        <button class="ctrl-btn" id="downloadBrochure">Download Brochure</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <span>Recompile</span> — a FOSS revival toolkit — this document is unfinished by design
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
